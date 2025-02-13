@@ -8,8 +8,9 @@ import Page1bottom from './components/Footer'
 import Lenis from '@studio-freight/lenis/types'
 import Footer from './components/Footer'
 import Contact from './pages/Contact'
-
+import Cursor from './components/Cursor'
 const App = () => {
+  
   useEffect(() => {
     const lenis = new Lenis({
       duration: 10,
@@ -24,7 +25,9 @@ const App = () => {
     requestAnimationFrame(raf);
   }, []);
   return (
+
     <div id="main">
+      <Cursor />
       <Header />
       <Routes>
         <Route path='/' element={<Page1 />} />
