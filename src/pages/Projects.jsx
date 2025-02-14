@@ -111,7 +111,7 @@ const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              className="group bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             >
               {/* Project Image */}
               <div className="relative h-64 overflow-hidden">
