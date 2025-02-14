@@ -91,7 +91,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white  dark:bg-gray-900 py-20">
+    <div className="min-h-screen bg-white py-20">
       <div className="container mt-5 mx-auto px-4">
         <Link to={"/"}>
           <div className="hover:cursor-pointer">
