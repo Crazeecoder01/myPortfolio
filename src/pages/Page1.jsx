@@ -12,9 +12,10 @@ import Timeline from '../components/Timeline';
 import Contact from '../components/Contact';
 import About from '../components/About';
 import Courses from '../components/Courses';
-
+import { Outlet } from 'react-router-dom';
 gsap.registerPlugin(ScrollTrigger);
 const Page1 = () => {
+  
   const tiltRef = useRef(null)
 
   const [xVal, setXVal] = useState(0)
@@ -68,8 +69,6 @@ const Page1 = () => {
       <Courses />
       <ProjectSection />
         <Timeline />
-      <div className='bg-gray-50'>
-      </div>
       {/* <Services /> */}
       <Marquee />
       <Contact />

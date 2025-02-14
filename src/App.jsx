@@ -9,8 +9,9 @@ import Lenis from '@studio-freight/lenis/types'
 import Footer from './components/Footer'
 import Contact from './pages/Contact'
 import Cursor from './components/Cursor'
+import About from './components/About'
 const App = () => {
-  
+
   useEffect(() => {
     const lenis = new Lenis({
       duration: 10,
@@ -31,9 +32,10 @@ const App = () => {
       <Header />
       <Routes>
         <Route path='/' element={<Page1 />} />
+        <Route path='/home' element={<Page1 />} />
+        <Route path='/about' element={<About />} />
         <Route path='/projects' element={<Projects />} />
-        <Route path='/contact' element={<Contact/>}/>
-  
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaDatabase, FaNetworkWired, FaCogs, FaLaptopCode, FaServer, FaCloud, FaCode } from "react-icons/fa";
+import { FaDatabase, FaNetworkWired, FaCogs, FaServer, FaCloud, FaCode } from "react-icons/fa";
 import { FaLaptopFile } from "react-icons/fa6";
 
 const courses = [
