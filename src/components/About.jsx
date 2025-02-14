@@ -21,7 +21,6 @@ const About = () => {
         {/* About Me Section */}
         <div className="grid grid-cols-1 md:grid-cols-1 gap-12 mb-20">
           <motion.div className="about-card bg-gray-100 rounded-xl shadow-xl overflow-hidden p-8 flex flex-col justify-center items-center text-center" whileHover={{ scale: 1.05 }}>
-            <h3 className="text-3xl font-bold mb-4">About Me</h3>
             <p className="text-gray-700 mb-6 text-justify">I am an aspiring software engineer with a background in electrical engineering, passionate about leveraging technology to solve real-world problems. My work spans across web development, AI/ML, and system simulations, with a strong focus on innovation, collaboration, and continuous learning.
 
               I have a solid grasp of data structures and algorithms. My understanding of computer science fundamentals, including operating systems, system design architecture, databases, and networking, allows me to design robust and scalable solutions.

@@ -48,36 +48,36 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center py-20 rounded-3xl m-6 bg-black  text-white shadow-xl shadow-zinc-900">
-      <h2 className="text-4xl font-bold mb-20 uppercase tracking-wide">
+    <div className="flex flex-col items-center py-20 px-4 sm:px-10 rounded-3xl m-6 bg-black text-white shadow-xl shadow-zinc-900">
+      <h2 className="text-3xl sm:text-4xl font-bold mb-10 sm:mb-20 uppercase tracking-wide text-center">
         My Education Timeline
       </h2>
 
       <div className="relative w-full max-w-4xl">
         {/* Timeline Line */}
-        <div className="absolute top-2 left-1/2 w-1 bg-gray-700 h-full transform -translate-x-1/2"></div>
+        <div className="absolute top-0 left-1/2 w-1 bg-gray-700 h-full transform -translate-x-1/2 hidden sm:block"></div>
 
-        <div ref={timelineRef} className="flex flex-col space-y-12">
+        <div ref={timelineRef} className="flex flex-col space-y-10 sm:space-y-12">
           {timelineData.map((item, index) => (
             <div
               key={index}
-              className={`relative flex items-center w-full ${
-                index % 2 === 0 ? "justify-start" : "justify-end"
+              className={`relative flex flex-col sm:flex-row items-center w-full ${
+                index % 2 === 0 ? "sm:justify-start" : "sm:justify-end"
               }`}
             >
-              {/* Timeline Dot */}
-              <div className="absolute w-6 h-6 bg-white rounded-full border-4 border-gray-700 left-1/2 transform -translate-x-1/2"></div>
+              {/* Timeline Dot (Visible on larger screens) */}
+              <div className="absolute w-6 h-6 bg-white rounded-full border-4 border-gray-700 left-1/2 transform -translate-x-1/2 hidden sm:block"></div>
 
               {/* Timeline Card */}
-              <div className="group relative w-5/12 p-6 rounded-xl bg-gray-50 shadow-lg transition-all transform hover:scale-105 text-black">
+              <div className="group relative w-full sm:w-5/12 p-5 sm:p-6 rounded-xl bg-gray-50 shadow-lg transition-all transform hover:scale-105 text-black">
                 {/* Institute Logo */}
-                <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-white p-2 rounded-full shadow-md">
+                <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-14 sm:w-16 h-14 sm:h-16 bg-white p-2 rounded-full shadow-md">
                   <img src={item.logo} alt={item.title} className="w-full h-full object-contain rounded-full" />
                 </div>
 
-                <h3 className="text-xl font-semibold mt-6">{item.title}</h3>
-                <span className="block text-gray-400">{item.year}</span>
-                <p className="mt-2 text-gray-500 ">{item.description}</p>
+                <h3 className="text-lg sm:text-xl font-semibold mt-6">{item.title}</h3>
+                <span className="block text-gray-400 text-sm sm:text-base">{item.year}</span>
+                <p className="mt-2 text-gray-500 text-sm sm:text-base">{item.description}</p>
               </div>
             </div>
           ))}

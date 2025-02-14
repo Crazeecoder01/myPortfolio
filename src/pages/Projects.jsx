@@ -4,6 +4,7 @@ import img from "../assets/image.png";
 import img2 from "../assets/image copy.png";
 import img3 from "../assets/image copy 2.png";
 import img4 from "../assets/image copy 3.png";
+import img5 from "../assets/image copy 4.png";
 const Projects = () => {
   const projects = [
     {
@@ -21,7 +22,7 @@ const Projects = () => {
       description:
         "A modern and responsive portfolio website showcasing my skills, projects, and contact information.",
       image: `${img2}`,
-      link: "#",
+      link: "https://himanshugupta.vercel.app/",
       tech: ["React", "TailwindCSS", "Framer Motion", "Gsap"],
     },
     {
@@ -62,12 +63,21 @@ const Projects = () => {
     },
     {
       id: 7,
+      title: "Bee",
+      description:
+        "A news web application with pagination and topic based filtering.",
+      image: `${img5}`,
+      link: "https://bee-ivory.vercel.app/",
+      tech: ["React", "Firebase", "TailwindCSS"],
+    },
+    {
+      id: 9,
       title: "ToDo List App",
       description:
         "A minimalistic and efficient task management app with persistent storage and task categorization.",
       image: "https://via.placeholder.com/600x400",
-      link: "https://github.com/Crazeecoder01/ToDo-List-App",
-      tech: ["React", "Redux", "LocalStorage", "TailwindCSS"],
+      link: "https://github.com/Crazeecoder01/todo-list",
+      tech: ["HTML", "CSS", "JavaScript"],
     },
     {
       id: 8,

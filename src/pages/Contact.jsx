@@ -76,16 +76,16 @@ const Contact = () => {
                         <p className="text-gray-300">Let's connect on social media or drop me an email.</p>
 
                         <div className="flex justify-center space-x-6 mt-6">
-                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/crazeecoder01" target="_blank" rel="noopener noreferrer">
                                 <FaGithub className="text-3xl text-gray-400 hover:text-white transition" />
                             </a>
-                            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/himanshu-gupta-15703a250/" target="_blank" rel="noopener noreferrer">
                                 <FaLinkedin className="text-3xl text-gray-400 hover:text-white transition" />
                             </a>
                             <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
                                 <FaTwitter className="text-3xl text-gray-400 hover:text-white transition" />
                             </a>
-                            <a href="mailto:your@email.com">
+                            <a href="mailto:hgupta080104@gmail.com">
                                 <FaEnvelope className="text-3xl text-gray-400 hover:text-white transition" />
                             </a>
                         </div>
