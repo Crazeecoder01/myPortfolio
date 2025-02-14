@@ -99,10 +99,10 @@ const Projects = () => {
           </div>
         </Link>
         {/* Page Title */}
-        <h1 className="text-5xl font-bold uppercase text-center text-gray-900 dark:text-white mb-4">
+        <h1 className="text-5xl font-bold uppercase text-center text-gray-900 mb-4">
           My Projects
         </h1>
-        <p className="text-lg text-center text-gray-600 dark:text-gray-300 mb-12">
+        <p className="text-lg text-center text-gray-600  mb-12">
           A collection of my work that showcases my skills and creativity.
         </p>
 
@@ -125,17 +125,17 @@ const Projects = () => {
 
               {/* Project Content */}
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                <h3 className="text-2xl font-bold text-gray-900  mb-2">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                <p className="text-gray-600  mb-4">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech, index) => (
                     <span
                       key={index}
-                      className="px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm"
+                      className="px-3 py-1 bg-gray-200  text-gray-800  rounded-full text-sm"
                     >
                       {tech}
                     </span>
@@ -143,7 +143,7 @@ const Projects = () => {
                 </div>
                 <a
                   href={project.link}
-                  className="inline-block px-6 py-2 border-2 border-gray-800 dark:border-gray-200 font-semibold rounded-lg text-gray-800 dark:text-gray-200 hover:bg-gray-800 dark:hover:bg-gray-200 hover:text-white dark:hover:text-gray-800 transition-colors duration-300"
+                  className="inline-block px-6 py-2 border-2 border-gray-800 font-semibold rounded-lg text-gray-800  hover:bg-gray-800 hover:text-white  transition-colors duration-300"
                 >
                   View Project
                 </a>
