@@ -7,7 +7,7 @@ const TiltText = (props) => {
     <div
       id='tiltDiv'
       ref={props.refer}
-      className='leading-[1.1] absolute mt-5 sm:mt-10 md:mt-16 px-4 sm:px-8'
+      className='leading-relaxed absolute mt-5 sm:mt-10 md:mt-16 px-4 sm:px-8'
     >
       {/* Intro Text */}
       <h1 className='text-xl sm:text-4xl md:text-[5vw] font-[woff3]'>

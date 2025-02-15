@@ -22,7 +22,7 @@ const projects = [
   {
     id: 2,
     title: "Portfolio Website",
-    description: "My personalized responsive and modern UI portfolio website.",
+    description: "My personalized responsive portfolio website with modern UI.",
     image: img2,
     link: "#",
     tech: ["React", "TailwindCSS", "Framer Motion", "Gsap"],
@@ -60,8 +60,8 @@ const ProjectSection = () => {
         {/* Title */}
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-950 mb-10 text-center sm:text-left uppercase tracking-wide">
           My Projects{" "}
-          <Link to={"/projects"} className="text-gray-400 hover:bg-gray-200 rounded-full p-1 transition">
-            <i className="ri-arrow-right-up-long-line"></i>
+          <Link to={"/projects"} className="transition">
+            <i className="text-gray-400 hover:bg-gray-200 font-light rounded-full ri-arrow-right-up-line"></i>
           </Link>
         </h2>
 
@@ -79,18 +79,18 @@ const ProjectSection = () => {
           pagination={{ clickable: true }}
           autoplay={{ delay: 3000 }}
           loop={true}
-          className="mySwiper max-h-[500px] sm:h-[500px] overflow-hidden"
+          className="mySwiper max-h-[540px] sm:h-[540px] overflow-hidden"
         >
           {projects.map((project) => (
             <SwiperSlide key={project.id} className="flex justify-center">
-              <div className="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+              <div className="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl flex flex-col h-[95%] min-h-[500px]">
                 {/* Image */}
-                <img src={project.image} alt={project.title} className="w-full h-44 sm:h-48 object-cover" />
+                <img src={project.image} alt={project.title} className="w-full h-44 sm:h-48  object-cover" />
 
                 {/* Content */}
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-2">{project.title}</h3>
-                  <p className="text-gray-600 text-sm sm:text-base mb-4">{project.description}</p>
+                  <p className="text-gray-600 text-sm sm:text-base mb-2 flex-grow">{project.description}</p>
 
                   {/* Tech Stack */}
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -102,7 +102,7 @@ const ProjectSection = () => {
                   </div>
 
                   {/* View Project Button */}
-                  <div className="flex justify-end">
+                  <div className="flex justify-end mt-auto">
                     <a
                       href={project.link}
                       className="px-4 py-2 border-2 border-gray-800 font-semibold rounded-full text-gray-800 hover:bg-gray-950 hover:text-white transition-all duration-300 text-sm sm:text-base"
