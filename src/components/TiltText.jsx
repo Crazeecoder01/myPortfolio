@@ -10,12 +10,12 @@ const TiltText = (props) => {
       className='leading-relaxed absolute mt-5 sm:mt-10 md:mt-16 px-4 sm:px-8'
     >
       {/* Intro Text */}
-      <h1 className='text-xl sm:text-4xl md:text-[5vw] font-[woff3]'>
-        <span className='outlined-text'>Hi, I am</span>
+      <h1 className='text-2xl sm:text-3xl md:text-3xl lg:text-[4vw] font-[woff3]'>
+        <span className=''>Hi, I am</span>
       </h1>
 
       {/* Name */}
-      <h1 className='text-3xl sm:text-5xl md:text-[7.5vw] font-[woff1] tracking-wide uppercase'>
+      <h1 className='text-3xl sm:text-5xl md:text-[7.5vw] font-[woff1] tracking-wide '>
         Himanshu
       </h1>
 

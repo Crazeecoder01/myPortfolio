@@ -56,7 +56,7 @@ const Page1 = () => {
           <TiltText refer={tiltRef} />
 
           {/* Welcome Box */}
-          <div className="absolute bottom-6 md:bottom-10 left-6 md:left-10 p-4 md:p-6 w-full max-w-md rounded-2xl backdrop-blur-lg bg-white/10 border border-white/20 shadow-lg shadow-black/20">
+          <div className="absolute bottom-6 md:bottom-8 left-6 md:left-10 p-4 md:p-6 w-full max-w-md rounded-2xl backdrop-blur-sm bg-white/10 border border-white/20 shadow-lg shadow-black/20">
             <h3 className="text-lg md:text-xl font-semibold">Welcome to My Portfolio</h3>
             <p className="text-gray-300 text-sm md:text-base mt-2">
               Crafting digital experiences with innovation and precision.
